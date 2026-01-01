@@ -8,7 +8,11 @@ public class EnhancedSwitch {
 
     private static String isItWeekday( int input) {
         return switch (input) {
-            case 1,7 -> "weekend";
+            case 1,7 -> {
+                System.out.println("Input is :" + input);
+                // return "weekend";
+                yield  "weekend";
+            }
             case 2,3,4,5,6 -> "weekday";
             default -> "Invalid Input";
         };
