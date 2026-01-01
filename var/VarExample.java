@@ -11,8 +11,8 @@ public class VarExample {
 //        x=24;
         var var = "abc";
     }
-//    private static void printName(String name) {
-    private static void printName(var name) {
+    private static void printName(String name) {
+//    private static void printName(var name) {
         System.out.println(name);
     }
 }
